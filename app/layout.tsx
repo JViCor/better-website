@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from 'next/font/google';
+import { Fraunces } from 'next/font/google';
 import Navbar from "./components/Navbar";
 import "./globals.css";
 
-const inter = Inter({
+const fraunces = Fraunces({
   subsets: ['latin'],
-  display: 'swap', 
-  variable: '--font-inter', 
+  variable: '--font-fraunces',
+  display: 'swap',
 });
 
 export const metadata = {
@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-ivory text-ink font-sans">
+      <body  className={`${fraunces.variable}`}>
         <Navbar />
         <main>{children}</main>
       </body>

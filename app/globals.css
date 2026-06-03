@@ -5,9 +5,11 @@
 :root {
   --color-ink: #0A0A0A;
   --color-ivory: #F9F9F6;
-  --color-sage: #8DAA91;
-  --color-moss: #B8C9A8;
-  --color-charcoal: #2C2C2C;
+  --color-cream: #F6F0E3;
+  --color-sage: #C7DED7;
+  --color-accent1: #E9A25C;
+  --color-moss: #2A7371;
+  --color-charcoal: #0F4E4D;
 }
 
 @layer utilities {
@@ -25,6 +27,9 @@
   }
   .text-ink {
     color: var(--color-ink);
+  }
+  .text-sage {
+    color: var(--color-sage);
   }
   .bg-sage {
     background-color: var(--color-sage);
