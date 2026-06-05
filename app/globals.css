@@ -1,6 +1,10 @@
 /* styles/globals.css or similar */
 @import "tailwindcss";
 
+.font-sans {
+  font-family: var(--font-fraunces), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
 /* define theme variables */
 :root {
   --color-ink: #0A0A0A;

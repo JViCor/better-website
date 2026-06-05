@@ -14,6 +14,9 @@ module.exports = {
         moss: "#B8C9A8",       // lighter green
         charcoal: "#2C2C2C",   // dark gray contrast
       },
+      fontFamily: {
+        sans: ["var(--font-fraunces)", "ui-sans-serif", "system-ui"],
+      },
     },
   },
   plugins: [],

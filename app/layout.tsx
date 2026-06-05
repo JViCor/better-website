@@ -11,15 +11,15 @@ const fraunces = Fraunces({
 
 export const metadata = {
   title: "Janet Villegas Portfolio",
-  description: "Software engineer portfolio website",
+  description: "Data engineer portfolio website",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body  className={`${fraunces.variable}`}>
+      <body style={{ "--navbar-height": "5rem" } as React.CSSProperties} className={`${fraunces.variable} font-sans`}>
         <Navbar />
-        <main>{children}</main>
+        <main className="flex-1">{children}</main>
       </body>
     </html>
   );
