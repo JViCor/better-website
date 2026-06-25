@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Fraunces } from 'next/font/google';
+import { Lora } from 'next/font/google';
 import Navbar from "./components/Navbar";
 import "./globals.css";
 
-const fraunces = Fraunces({
+const lora = Lora({
   subsets: ['latin'],
-  variable: '--font-fraunces',
+  variable: '--font-lora',
   display: 'swap',
 });
 
@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body style={{ "--navbar-height": "5rem" } as React.CSSProperties} className={`${fraunces.variable} font-sans`}>
+      <body style={{ "--navbar-height": "3.75rem" } as React.CSSProperties} className={`${lora.variable} font-sans`}>
         <Navbar />
         <main className="flex-1">{children}</main>
       </body>

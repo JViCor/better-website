@@ -15,7 +15,7 @@ module.exports = {
         charcoal: "#2C2C2C",   // dark gray contrast
       },
       fontFamily: {
-        sans: ["var(--font-fraunces)", "ui-sans-serif", "system-ui"],
+        sans: ["var(--font-lora)", "ui-sans-serif", "system-ui"],
       },
     },
   },
