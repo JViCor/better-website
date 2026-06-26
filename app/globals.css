@@ -1,6 +1,11 @@
 /* styles/globals.css or similar */
 @import "tailwindcss";
 
+main {
+  background-color: var(--color-ink);
+  min-height: calc(100vh - var(--navbar-height, 3.75rem));
+}
+
 .font-sans {
   font-family: var(--font-lora), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
@@ -17,6 +22,9 @@
 }
 
 @layer utilities {
+  .min-h-page {
+    min-height: calc(100vh - var(--navbar-height, 3.75rem));
+  }
   .bg-ink {
     background-color: var(--color-ink);
   }
