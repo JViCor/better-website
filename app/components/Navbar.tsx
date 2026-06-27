@@ -12,7 +12,7 @@ const links = [
 ];
 
 export default function Navbar() {
-  const navRef = useRef(null);
+  const navRef = useRef<HTMLElement>(null);
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
@@ -31,14 +31,12 @@ export default function Navbar() {
     return () => window.removeEventListener("resize", updateHeight);
   }, []);
 
-  // Close menu on resize to desktop
   useEffect(() => {
     const onResize = () => { if (window.innerWidth >= 768) setOpen(false); };
     window.addEventListener("resize", onResize);
     return () => window.removeEventListener("resize", onResize);
   }, []);
 
-  // Disable scroll while menu open
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
@@ -50,7 +48,6 @@ export default function Navbar() {
     <>
       <nav ref={navRef} className="relative z-40 bg-cream/95 backdrop-blur-sm border-b border-ivory">
         <div className="max-w-4xl mx-auto px-6 flex items-center justify-center py-4">
-          {/* Desktop links */}
           <ul className="hidden md:flex gap-2 md:gap-6 flex-nowrap text-sm font-medium tracking-wide whitespace-nowrap">
             {links.map(({ href, label }) => {
               const active = pathname === href;
@@ -64,7 +61,6 @@ export default function Navbar() {
             })}
           </ul>
 
-          {/* Hamburger — mobile only */}
           <button
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
@@ -78,14 +74,12 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Fullscreen overlay — rendered outside <nav> so it covers everything including the navbar */}
       <div
         className={`fixed inset-0 z-50 md:hidden bg-moss transition-opacity duration-300 ${
           open ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
         aria-hidden={!open}
       >
-        {/* X button */}
         <button
           onClick={close}
           aria-label="Close menu"
@@ -96,7 +90,6 @@ export default function Navbar() {
           </svg>
         </button>
 
-        {/* Centered links */}
         <div className="flex items-center justify-center h-full">
           <ul className="flex flex-col gap-8 text-xl font-semibold text-center">
             {links.map(({ href, label }) => {

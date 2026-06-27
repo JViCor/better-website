@@ -6,30 +6,45 @@ export default function Home() {
       <div className="text-center md:text-left max-w-md">
 
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 bg-moss text-ink rounded-full px-4 py-1 text-xs tracking-widest font-medium uppercase mb-6">
+        <div
+          className="animate-fade-up inline-flex items-center gap-2 bg-moss text-ink rounded-full px-4 py-1 text-xs tracking-widest font-medium uppercase mb-6"
+          style={{ animationDelay: "0ms" }}
+        >
           <span className="w-1.5 h-1.5 rounded-full bg-ink shrink-0" />
           Chicago · Data Engineer
         </div>
 
         {/* Heading */}
-        <h1 className="text-4xl font-medium text-ivory mb-2">
+        <h1
+          className="animate-fade-up text-4xl font-medium text-ivory mb-2"
+          style={{ animationDelay: "100ms" }}
+        >
           Hello,
           <br />
           I'm <span className="font-semibold italic">Janet Villegas</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-sage/80 text-sm italic mb-6">
+        <p
+          className="animate-fade-up text-sage/80 text-sm italic mb-6"
+          style={{ animationDelay: "200ms" }}
+        >
           // where clean pipelines meet purposeful design
         </p>
 
         {/* Bio */}
-        <p className="text-ivory/80 leading-relaxed mb-8">
-          I believe <span className="font-semibold text-ivory">every great product starts with clean data</span> — and I build the pipelines that make it possible. Based in Chicago, I design systems that ingest, transform, and surface insights that help teams move in the right direction.
+        <p
+          className="animate-fade-up text-ivory/80 leading-relaxed mb-8"
+          style={{ animationDelay: "300ms" }}
+        >
+          I believe <span className="font-semibold text-ivory">every action is driven by data.</span> I work inside product and analytics orgs to build the pipelines and models that make that true in practice. Turning messy, scattered data into clean, reliable systems that teams can build on.
         </p>
 
         {/* Skills */}
-        <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+        <div
+          className="animate-fade-up flex flex-wrap gap-2 justify-center md:justify-start"
+          style={{ animationDelay: "400ms" }}
+        >
           {skills.map((s) => (
             <span key={s} className="text-xs px-3 py-1 bg-moss text-ink rounded-full font-medium">
               {s}
@@ -40,7 +55,10 @@ export default function Home() {
       </div>
 
       {/* Image placeholder */}
-      <div className="w-52 h-52 bg-sage/20 border border-sage/30 rounded-full flex items-center justify-center shrink-0">
+      <div
+        className="animate-fade-up w-52 h-52 bg-sage/20 border border-sage/30 rounded-full flex items-center justify-center shrink-0"
+        style={{ animationDelay: "500ms" }}
+      >
         {/* Future image goes here */}
       </div>
     </div>

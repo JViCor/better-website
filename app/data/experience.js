@@ -19,5 +19,25 @@ export const experienceItems = [
       "Developed and maintained ETL pipelines that extracted data from Kafka topics and other sources, transformed and enriched datasets, and loaded data into Elasticsearch and downstream APIs"
     ],
     skills: ["Python", "Elasticsearch", "Kubernetes", "Kafka", "ETL", "APIs"]
+  },
+  {
+    title: "Software Engineer — Optum",
+    startDate: "January 2020",
+    endDate: "November 2022",
+    description: [
+      "Part of the HCP Intelligence team, using Python, Elasticsearch and Kubernetes. I built pivotal components powering user profiles, notifications, global search, and various data retrieval functions",
+      "Developed and maintained ETL pipelines that extracted data from Kafka topics and other sources, transformed and enriched datasets, and loaded data into Elasticsearch and downstream APIs"
+    ],
+    skills: ["Python", "Elasticsearch", "Kubernetes", "Kafka", "ETL", "APIs"]
+  },
+  {
+    title: "Software Engineer — Optum",
+    startDate: "January 2020",
+    endDate: "November 2022",
+    description: [
+      "Part of the HCP Intelligence team, using Python, Elasticsearch and Kubernetes. I built pivotal components powering user profiles, notifications, global search, and various data retrieval functions",
+      "Developed and maintained ETL pipelines that extracted data from Kafka topics and other sources, transformed and enriched datasets, and loaded data into Elasticsearch and downstream APIs"
+    ],
+    skills: ["Python", "Elasticsearch", "Kubernetes", "Kafka", "ETL", "APIs"]
   }
 ]
